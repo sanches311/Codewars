@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
 <script>
+//https://www.codewars.com/kata/highest-and-lowest
+
 function highAndLow(numbers){
 let arr = numbers.split(" ").sort ((a,b) => a-b).reverse();
   if (arr.length == 1) return (arr.concat (arr[0]).join(" "));
@@ -9,20 +11,22 @@ let arr = numbers.split(" ").sort ((a,b) => a-b).reverse();
      return(arr.join(" "));
     } 
   }
- </script>
- <script>
+
+// https://www.codewars.com/kata/disemvowel-trolls
+
    function disevowel (str) {
     let newStr="";
      for (let i=0; i < str.length; i++) {
        if (str[i] != "a" && str[i] !="A" && str[i] !="e" && str[i] !="E" && str[i] != "o" && str[i] != "O" && str[i] != "u" && str[i] != "U" && str[i] != "y" && str[i] != "Y") {
          newStr+=str[i];
-                }
-                
-      
-     }
+                }              
+           }
      return (newStr);
     
    }
+
+   //https://www.codewars.com/kata/isograms
+
    function isIsogram (str) {
     let arr = str.toUpperCase().split("").sort();
     let count = 0;
@@ -32,6 +36,8 @@ let arr = numbers.split(" ").sort ((a,b) => a-b).reverse();
     if (count) {return true;}
     else {return false;}    
    }
+
+   //https://www.codewars.com/kata/digits-explosion
 
    function explode (str){
     let arr = str.split("");
@@ -43,6 +49,8 @@ let arr = numbers.split(" ").sort ((a,b) => a-b).reverse();
     }
     return (newArr.join(""));
       }
+
+  // https://www.codewars.com/kata/duplicate-encoder
 
   function dublicateEncode (str) {
     let arr = str.toUpperCase().split("");
@@ -61,6 +69,9 @@ let arr = numbers.split(" ").sort ((a,b) => a-b).reverse();
       }
       return (newArr.join(""));
     } 
+
+    //  https://www.codewars.com/kata/n-th-fibonacci
+
   function calculateFibonachi (n) {
     let a=1;
     let b=1;
@@ -77,6 +88,8 @@ while (n > 2)
 return c;
     }
 
+ // https://www.codewars.com/kata/multiples-of-3-or-5
+
 function getMultilie (number) {
   let sum = 0;
   for (let i=0; i<number;i++) {
@@ -84,6 +97,8 @@ function getMultilie (number) {
   }
   return sum;
 }
+
+// https://www.codewars.com/kata/handshake-problem
 
 function handshake (n) {
   let sum=1;
@@ -95,6 +110,9 @@ function handshake (n) {
      }
      return count;
 }
+
+//https://www.codewars.com/kata/head-tail-init-and-last
+
 function head(arr) {
   return arr[0];
 }
@@ -111,6 +129,8 @@ function last (arr) {
   return arr[arr.length-1];
 }
 
+// https://www.codewars.com/kata/array-deep-count
+
 function deepCount (arr) {
 let count =0;
 let result= arr.reduce(function (count, current, index, arr) {
@@ -122,6 +142,8 @@ return result;
 }
 
 // alert(deepCount([1, 2, 3]))
+
+// https://www.codewars.com/kata/pair-of-gloves
 
 function numberOfPairs(gloves) {
   let pair = 0;
